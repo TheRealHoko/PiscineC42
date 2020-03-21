@@ -3,9 +3,12 @@
 
 char	*ft_strstr(char *haystack, char *needle)
 {
-	int i = 0;
+	int i;
 	int j;
-
+	
+	i = 0;
+	if (!*needle)
+		return (haystack);
 	while(haystack[i] != '\0')
 	{
 		j = 0;
